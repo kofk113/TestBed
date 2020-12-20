@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>의정부시 모든 것 | 맛집</title>
+    <link rel="stylesheet" href="mainform.css">
+    <!--4-5 link 태그로 CSS3 파일 불러오기-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        $('.dropDown').click(function(){
+        var toggle = $('#dropDown').hasClass('show');
+        if(toggle == true){
+        $('#dropDown').removeClass('show');
+        $('#dropDown').slideUp(800);
+        }else{
+        $('#dropDown').addClass('show');
+        $('#dropDown').slideDown(800);
+        }
+        });
+        });
+
+        function scroll_top(speed){
+        $('html, body').animate({
+        scrollTop:0
+        }, speed);
+        }
+
+    </script>
+
+</head>
+<body style="background-image:url(./img/background.jpg); margin:0px;">
+   
+    <p>
+        2장 <a href="#2-6">2-6br> 태그로 새로운 줄로 넘어가기</a> <a href="#2-11">2-11 img 태그로 이미지 삽입 </a> <a href="#2-19">
+    2-19 링크의 타겟 속성을
+    사용하여 새로운 창에서 페이지가 열리게 만듬-->
+    2-16 표만들기 사용하여 구조화
+2-9 텍스트 꾸미기사용 강조표현을 함
+</a>
+
+    </p>
+    <p>
+        3장
+    </p>
+    <p>
+
+        4장 <a href="#4-3">
+            4-5 link
+            태그로 스타일 시트 만들기
+        </a> 4–-10 색 활용
+    </p>
+    <p >
+    5장
+    </p >
+    <p >
+
+    6장 <a href="#6-1">
+    6-1HTML 태그의 이벤트 리스너 속성에
+    자바스크립트 코드 작성하여 마우스를 이용하여 사진을 변경
+</a>
+    </p >
+    <p >
+
+    7장
+    </p >
+    <p >
+
+    8장
+    </p >
+
+    <div id="headerbackground" >
+    <div class="wrapper" >
+    <header class="header" >
+    <a href="page1.html" > <img src="./img/mainlogo.png" id="headlogo" > </a >
+    <a href="page1.html" >
+    <h2 id="headerletter" >
+    의정부시 모든 것 &nbsp;| &nbsp;<div class="hightlight" > 맛집</div >
+    </h2 >
+    </a >
+    <div class="dropDown" >
+    <a href="#" onclick="showMenu()" > <img src="./img/list.png" > </a >
+    <div id="dropDown" class="dropDown_list" >
+    <a href="page1.html" class="hightlight" > 홈</a >
+    <a href="page2.html" > 소개</a >
+    <a href="page3.html" > 맛집</a >
+    <a href="page4.html" > Hot Place</a >
+    <a href="page5.html" > 주변 둘러볼 곳</a >
+
+    </div >
+
+    </div >
+    </div >
+    </header >
+    </div >
+    </div >
+    <div class="wrapper" >
+        <section id="main">
+            <!--
+            2-16 표만들기 사용하여 구조화-->
+            <table class="page3Table">
+                <tr>
+                    <td class="icon-home"> </td>
+
+                    <td> <a href="http://naver.me/FOsFjzGD" target="_blank"> <p style="color : blue;"> 한림육가</p> </a> </td>
+
+                    <!--4-10  색 활용하여 글자색을 표현  -->
+
+                    <h2 id="4-3"> 4-3</h2>
+                    <td rowspan="6" class="imgtd"> <img src="./img/food1.jpg"> </td>
+
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                    <td class="icon-location"> </td>
+                    <td> 경기 의정부시 범골로35번길 38</td>
+                </tr>
+                <tr>
+                    <td class="icon-clock"> </td>
+                    <td> 매일 10:00 - 22:00</td>
+                </tr>
+                <tr>
+                    <td class="icon-spoon"> </td>
+                    <td> 대표메뉴 - 삼겹살, 목살 -싯가 (현재 기준 100g 5000원) </td>
+                </tr>
+                <tr>
+                    <td class="icon-book-open"> </td>
+                    <td>
+                        정육식당으로서 신선한 고기를 먹을 수 있으나 가격이 정해져 있지 않아 때에 따라 고기 가격이 달라
+                        타이밍을 잘 맞추는 것도 중요
+                    </td>
+                </tr>
+            </table>
+
+            <!-- 2-19 링크의 타겟 속성을
+    사용하여 새로운 창에서 페이지가 열리게 만듬-->
+            <table class="page3Table">
+                <tr>
+                    <td rowspan="6" class="imgtd"> <img src="./img/food2.png"> </td>
+                    <td class="icon-home"> </td>
+                    <td> <a href="http://naver.me/5JYRSTGx" target="_blank"> <p style="color : blue;"> 형네식당</p> </a> </td>
+                    <h2 id="2-19"> 2-19</h2>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                    <td class="icon-location"> </td>
+                    <td> 경기 의정부시 호국로1309번길 7 (의정부 경전철 중앙역)</td>
+                </tr>
+                <tr>
+                    <td class="icon-clock"> </td>
+                    <td> 매일 08:30 - 23:00</td>
+                </tr>
+                <tr>
+                    <td class="icon-spoon"> </td>
+                    <td> 대표메뉴 - 부대찌개 9, 000원</td>
+                </tr>
+                <tr>
+                    <td class="icon-book-open"> </td>
+                    <td>
+                        <!--2-13 <ul>태그 활용-->
+
+                        <p><ul><li> 의정부 현지인이라면 오뎅식당보다 선호하는 곳 인원 수 보다 1인분 적게 시키고</p>
+                        <p> <strong> 사리를 추가하는 것을 권장</strong> </ul></p>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- 6-1 :  HTML 태그의 이벤트 리스너 속성에 자바스크립트 코드 작성을 하여 마우스를 올렸을 때 다른 사진을 나오게 함-->
+            <table class="page3Table">
+                <tr>
+                    <td rowspan="6" class="imgtd">
+                        <img src="./img/food3.jpg" class="imgtd"
+                             onmouseover="this.src='./img/food3.jpg'"
+                             onmouseout="this.src='./img/don.jpg'"
+                    </td>
+                    <td class="icon-home"> </td>
+                    <td> <a href="http://naver.me/FX3DelIq" target="_blank"> <p style="color : blue;"> 사쿠라멘</p> </a> </td>
+
+
+                </tr>
+                <tr>
+                    <td class="icon-location"> </td>
+                    <td> <strong> *웨이팅이 항상 있으므로 첫 손님으로 가는 것을 추천* </strong> </td>
+                </tr>
+                <tr>
+                    <td class="icon-location"> </td>
+                    <td>
+                        경기 의정부시 호암로 243-12
+
+                        (1호선 회룡역)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="icon-clock"> </td>
+                    <td> 매일 17:00 - 21:00</td>
+                </tr>
+                <tr>
+                    <td class="icon-spoon"> </td>
+                    <td>
+                        대표메뉴 -
+
+                        11, 000원
+
+                        등심돈까스
+
+                        11, 000원
+
+                        냉라멘
+
+                        11, 000원
+
+                        라유짬뽕
+                    </td>
+                </tr>
+                <tr>
+                    <td class="icon-book-open"> </td>
+                    <td>
+                        <p> 이런 곳에 이런 음식이??</p>
+                        <p> 돈까스가 두꺼운데 이렇게 부드러울 수가 있다</p>
+                    </td>
+                </tr>
+            </table>
+            <table class="page3Table">
+                <tr>
+                    <td rowspan="6" class="imgtd"> <img src="./img/food4.jpg"> </td>
+                    <td class="icon-home"> </td>
+                    <td> <a href="http://naver.me/GXhty7wx" target="_blank"> <p style="color : blue;"> 평얌면옥</p> </a> </td>
+                </tr>
+                <tr>
+                    <td class="icon-phone"> </td>
+                    <td> 031 - 877 - 2282</td>
+                </tr>
+                <tr>
+                    <td class="icon-location"> </td>
+                    <td> 경기 의정부시 평화로439번길 7 (의정부 경전철 범골역)</td>
+                </tr>
+                <tr>
+                    <td class="icon-clock"> </td>
+                    <td> 매일 11:00 - 20:30</td>
+                </tr>
+                <tr>
+                    <td class="icon-spoon"> </td>
+                    <td> 대표메뉴 - 평양냉면 11, 000원 수육 15000원</td>
+                </tr>
+                <tr>
+                    <td class="icon-book-open"> </td>
+                    <td>
+                        <p> 수요미식회 냉면편에 소개</p>
+                        <p> 수육이 별미</p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <footer class="footer">
+
+            <!--
+            2-9 텍스트 꾸미기활용 강조 표현을 함-->
+            <a href="https://blog.naver.com/kofk113" target="_blank"> <br> <br> <hr size="3"> <strong> 더 많은 의정부 맛집을 알고 싶다면 이곳을 참조</strong> <br> <br> </a>
+
+            <a href=#> <h1> ↑</h1> </a> //위로 갈 수 있게 하는거
+
+            <br> <br> <br>
+        </footer>
+    </div >
+    </body >
+    </html >

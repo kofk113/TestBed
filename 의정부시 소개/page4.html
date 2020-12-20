@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>의정부시 모든 것 | Hot Place</title>
+    <link rel="stylesheet" href="mainform.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <!--6-2  <script>태그에 자바스크립트코드작성-->
+            <script>
+            $(document).ready(function(){
+            $('.dropDown').click(function(){
+            var toggle = $('#dropDown').hasClass('show');
+            if(toggle == true){
+            $('#dropDown').removeClass('show');
+            $('#dropDown').slideUp(800);
+            }else{
+            $('#dropDown').addClass('show');
+            $('#dropDown').slideDown(800);
+            }
+            });
+            });
+
+            function scroll_top(speed){
+            $('html, body').animate({
+            scrollTop:0
+            }, speed);
+            }
+        </script>
+    </head>
+    <p>
+        1장-
+
+    </p>
+
+    <p>
+        2장 <a href="#2-6">2-6br> 태그로 새로운 줄로 넘어가기</a> <a href="#2-11">2-11img> 태그로 이미지 삽입</a>  <a href="#2-19">2-19링크의 target 속성 활용</a> 2-22 iframe을 가진 웹 페이지활용 구글맵을 불러옴 -->
+    -2-7 특수 문자, 기호, 심볼 삽입을 사용하여 띄어쓰기를 하였습니다-->
+    </p>
+    <p>
+        3장
+    </p>
+    <p>
+
+        4장 <a href="#4-3">4-3</a>  4장 dropdown메뉴를 활용-->
+    </p>
+    <p>
+        5장
+    </p>
+    <p>
+
+        6장  <a href="#6-1">
+    6-1HTML 태그의 이벤트 리스너 속성에
+    자바스크립트 코드 작성
+    6-2script>
+태그에 자바스크립트코드작성-->
+        </a>
+        </p>
+        <p>
+
+        7장
+        </p>
+        <p>
+
+        8장 <a href="#8-5">8-5</a>임베디드 기술을 사용하여 외부의 구글 지도를 받아왔습니다
+        </p>
+        <body style="background-image:url(./img/background.jpg); margin:0px;">
+        <div id="headerbackground">
+        <div class="wrapper">
+        <header class="header">
+        <a href="page1.html"><img src="./img/mainlogo.png" id="headlogo"></a>
+        <a href="page1.html">
+        <!--2-7 특수 문자, 기호, 심볼 삽입을 사용하여 띄어쓰기를 하였습니다-->
+
+        <h2 id="headerletter">
+        의정부시 모든 것 &nbsp;| &nbsp;<div class="hightlight">Hot Place</div>
+        </h2>
+        </a>
+        <div class="dropDown">
+        <!--4장 dropdown메뉴를 활용-->
+        <a href="#" onclick="showMenu()"><img src="./img/list.png"></a>
+        <div id="dropDown" class="dropDown_list">
+        <a href="page1.html" class="hightlight">홈</a>
+        <a href="page2.html">소개</a>
+        <a href="page3.html">맛집</a>
+        <a href="page4.html">Hot Place</a>
+        <a href="page5.html">주변 둘러볼 곳</a>
+
+        </div>
+        </div>
+        </header>
+        </div>
+        </div>
+        <section id="mainform">
+        <table class="page4Table">
+        <tr>
+        <th colspan="2">카페 리브로</th>
+        </tr>
+        <tr>
+        <td class="tdspace1"><img src="./img/artstadium.jpg"></td>
+        <h2 id="8-5">8-5</h2>
+        <!--8장 임베디드 2-22 iframe을 가진 웹 페이지활용 구글맵을 불러옴 -->
+        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1876.3830566302215!2d127.03512957673391!3d37.727010742047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cc15a07bd1ddd%3A0xfa75af9469fe1862!2z7Lm07Y6Y66as67iM66Gc!5e0!3m2!1sko!2skr!4v1593231109079!5m2!1sko!2skr" style="border:0" allowfullscreen></iframe></td>
+        </tr>
+        <tr>
+        <td colspan="2"><p><strong>의정부 내 카페 중 가장 사람들이 검색을 많이 하는 장소</strong></p></td>
+        </tr>
+        </table>
+        </section>
+        <div class="evenNum">
+        <table class="page4Table">
+        <tr>
+        <th colspan="2">의정부 행복로 (중앙로 거리)</th>
+        </tr>
+        <tr>
+        <td class="tdspace1"><img src="./img/happroad.png"></td>
+        <td class="tdspace2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1876.0327323034683!2d127.04792174445906!3d37.74083571060707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cc730670d63c7%3A0x6ef3ffc907916c3b!2z6rK96riw64-EIOydmOygleu2gOyLnCDsnZjsoJXrtoDrj5kg7ZaJ67O166Gc!5e0!3m2!1sko!2skr!4v1593233855476!5m2!1sko!2skr" " frameborder="0" style="border:0" allowfullscreen></iframe></td>
+        </tr>
+        <tr>
+        <td colspan="2"><p><strong> 의정부 최대 상권지역이자 번화가. 여러가지 상점, 먹거리, 즐길거리가 많으며 양주, 포천, 동두천 등 2- 30대들이 넘치는 거리이다.</strong></p></td>
+        </tr>
+        </table>
+        </div>
+        <table class="page4Table">
+        <tr>
+        <th colspan="2">민락 2지구 </th>
+        </tr>
+        <tr>
+        <td class="tdspace1"><img src="./img/min.jpg"></td>
+        <td class="tdspace2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1577.4719166117884!2d127.09487703154032!3d37.74446188929797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cc64f87e0eb5b%3A0x2d4ada520878bf61!2z7LCo7J207ZSM65-s7Iqk7ZWc7J2Y7JuQ!5e0!3m2!1sko!2skr!4v1593231383946!5m2!1sko!2skr" frameborder="0" style="border:0" allowfullscreen></iframe></td>
+        </tr>
+        <tr>
+        <td colspan="2">
+        <p><strong>의정부 내의 새로운 신도시로 여러 유명한 프랜차이즈들과 다양한 즐길러기등이 다양</p></strong>
+        <p> 위 지도표시로 대체</p>
+        </td>
+        </tr>
+        </table>
+        <div class="evenNum">
+        <table class="page4Table">
+        <tr>
+        <th colspan="2"> 의정부 경전철</th>
+        </tr>
+        <tr>
+        <td class="tdspace1"><img src="./img/g1.jpg"></td>
+        <td class="tdspace2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2653.237726061933!2d127.04199004055766!3d37.73729799981179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa634e0616d026abb!2z6rK97KCE7LKg7J2Y7KCV67aA!5e0!3m2!1sko!2skr!4v1593233636947!5m2!1sko!2skr" frameborder="0" style="border:0" allowfullscreen></iframe></td>
+        </tr>
+        <tr>
+        <td colspan="2">
+        <p><strong>다른 곳에는 없는 의정부의 명물 중 하나라고 볼 수 있다</strong></p>
+        <p>요금은 성인 기준 1450원</p>
+
+
+        </td>
+        </tr>
+        </table>
+        </div>
+        <footer class="footer">
+        <br><br><hr size="3"><br><br>
+        <a href=#><h1>↑</h1></a>//위로 갈 수 있게 하는거
+
+        <br><br><br>
+        </footer>
+        </body>
+        </html>
